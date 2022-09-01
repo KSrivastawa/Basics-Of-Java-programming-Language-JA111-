@@ -1,0 +1,13 @@
+package com.enums;
+
+public class Demo {
+
+	public static void main(String[] args) {
+
+		Month2 m1 = Month2.JAN;
+		
+		//System.out.println(m1);
+
+	}
+
+}

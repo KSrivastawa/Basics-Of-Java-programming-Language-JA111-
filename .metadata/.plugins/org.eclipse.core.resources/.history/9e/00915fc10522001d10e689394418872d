@@ -1,0 +1,24 @@
+
+Q2) Explain about Hashcode and Equals Method.
+
+Ans:
+
+=> Equals():
+	The equals() is a method of lang.Object class, and it is used to compare two objects.
+	To compare two objects that whether they are the same, it compares the values of both
+	the object's attributes.
+	By default, two objects will be the same only if stored in the same location.
+	
+	Syntax: 
+		public boolean equals(Object obj)
+	
+	Parameter:
+	 	obj: It takes the reference object as parameter, with which we need to make the comparison.
+	 	
+	Returns:
+		It returns the true if both the objects are the same, else returns false.
+		
+=> Hashcode():
+ 
+
+

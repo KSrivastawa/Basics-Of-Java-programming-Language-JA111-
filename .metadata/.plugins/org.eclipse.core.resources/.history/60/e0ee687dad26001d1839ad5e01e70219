@@ -1,0 +1,17 @@
+package com.enums;
+
+public class EnumWith_Values_Ordinals {
+
+	public static void main(String[] args) {
+		
+		Month[] month = Month.values();
+		
+		for(Month months : month) {
+			
+			System.out.println(months);
+			
+		}
+		
+	}
+	
+}

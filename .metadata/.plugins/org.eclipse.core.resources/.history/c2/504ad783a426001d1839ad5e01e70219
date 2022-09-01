@@ -1,0 +1,66 @@
+package com.var_args;
+
+import java.util.ArrayList;
+import java.util.Collection;
+import java.util.HashSet;
+import java.util.List;
+import java.util.Set;
+
+public class Students {
+	
+	int roll;
+	String name;
+	int marks;
+	
+	public Students() {
+		// TODO Auto-generated constructor stub
+	}
+	
+	public Students(int roll, String name) {
+		super();
+		this.roll = roll;
+		this.name = name;
+		
+	}
+	
+	public Students(int roll, String name, int marks) {
+		super();
+		this.roll = roll;
+		this.name = name;
+		this.marks = marks;
+		
+	}
+	
+	
+	public static void studentObjects(Students... students ) {
+		
+		for(int i=0; i<students.length; i++) {
+			
+			Set<Students> set = new HashSet<>();
+			
+			set.addAll((Collection<? extends Students>) students[i]);
+			
+			System.out.println(set.size());
+			
+			List<Students> list = new ArrayList<>(set);
+			
+			System.out.println(list);
+		}
+		
+	}
+
+	public static void main(String[] args) {
+
+		Students[] students = {
+				new Students(),
+				new Students(),
+				new Students()
+		};
+		
+		// ---calling method---
+		studentObjects( students );
+		
+		
+	}
+
+}

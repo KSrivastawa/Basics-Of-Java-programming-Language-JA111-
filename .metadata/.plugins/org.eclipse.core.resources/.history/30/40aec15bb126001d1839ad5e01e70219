@@ -1,0 +1,24 @@
+package com.enums;
+
+public enum Enum_Methods_Variables  {
+
+	JAN,FEB,MAR,APR,MAY;
+	
+	int i=9;
+	
+	void fun1() {
+		System.out.println("Hello i: ");
+	}
+	
+	public static void main(String[] args) {
+		
+		Enum_Methods_Variables e1 = 
+		
+		System.out.println("inside main of enum"+i);
+		
+		
+		
+	}
+	
+	
+}

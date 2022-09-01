@@ -1,0 +1,12 @@
+package com.enums;
+
+public class EnumOf_Month {
+
+	JAN,FEB,MAR,APR,MAY;
+	
+	public static void main(String[] args) {
+		
+		
+	}
+	
+}

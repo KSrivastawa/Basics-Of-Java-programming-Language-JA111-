@@ -1,0 +1,25 @@
+Q1)  Is there any difference between creating a string with and without a new operator?  
+        Explain with an example.
+
+        
+Ans: 
+	Both expression gives you String object, but there is difference between them.
+	 When you create String object using new() operator, it always create a new
+	  object in heap memory.
+	
+	Example:
+	
+		=> With new operator String create the string in heap and put a copy in string
+		 const pool so the result of hashcode is same in below case.
+		 
+		  String s1 = new String("Test");
+	   String s2 = new String("Test");
+	   System.out.println(s1.hashCode() + " "+ s2.hashCode() + " " + s1.equals(s2));
+	
+	But without using new operator its still giving the same hashcode.
+	
+	String s1 = new String("Test");
+	    String s2 = "Test";
+	    System.out.println(s1.hashCode() + " "+ s2.hashCode() + " " + s1.equals(s2));
+	
+

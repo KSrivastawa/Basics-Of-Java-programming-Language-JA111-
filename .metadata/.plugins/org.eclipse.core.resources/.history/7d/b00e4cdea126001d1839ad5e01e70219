@@ -1,0 +1,68 @@
+package com.var_args;
+
+import java.util.Scanner;
+
+public class Main {
+	
+	public static void variableArguments(int...x) {
+		int sum = 0;
+		
+		if(x.length == 1) {
+			 {
+				if(x[0]%2==0) {
+					System.out.println(x[0]+" is Even number.");
+				}
+				else {
+					System.out.println(x[0]+" is Odd number.");
+				}
+			}
+			
+		}
+		else if(x.length == 2) {
+			for(int i=0; i<x.length; i++) {
+				sum+= x[i];
+			}
+			System.out.println("Sum of two numbers: "+sum);
+		}
+		else if(x.length == 6) {
+			for(int i=0; i<x.length; i++) {
+				sum+= x[i];
+			}
+			System.out.println("Sum of six numbers: "+sum);
+		}
+		else {
+			System.out.println("Enter required number...");
+		}
+		
+	}
+
+	public static void main(String[] args) {
+		
+		Scanner sc = new Scanner(System.in);
+		
+		System.out.println("Enter single number:");
+		int a = sc.nextInt();
+		
+		System.out.println("Enter two numbers:");
+		int b = sc.nextInt();
+		int c = sc.nextInt();
+		
+		System.out.println("Enter six numbers:");
+		int d = sc.nextInt();
+		int e = sc.nextInt();
+		int f = sc.nextInt();
+		int g = sc.nextInt();
+		int h = sc.nextInt();
+		int i = sc.nextInt();
+		
+		
+		// ---calling methods---
+		Main.variableArguments(a);
+		Main.variableArguments(b, c);
+		Main.variableArguments(d, e, f, g, h, i);
+		
+		
+
+	}
+
+}

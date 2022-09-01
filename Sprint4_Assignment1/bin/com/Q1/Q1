@@ -1,0 +1,20 @@
+
+Q1) Explain about the Marker interface?
+
+Ans:
+	An interface that does not contain methods, fields, and constants is known as
+	marker interface. In other words, an empty interface is known as marker interface
+	or tag interface. It delivers the run-time type information about an object.
+
+	- It delivers the run-time type information about an object. It is the
+	  reason that the JVM and compiler have additional information about an object. 
+	- The 'Serializeable' and 'Cloneable' interfaces are the example of marker interface.
+	 In short, it indicates a signal or command to the JVM.
+
+	for example: 
+		public interface Serializable   
+		{  
+			  
+		}
+	
+	

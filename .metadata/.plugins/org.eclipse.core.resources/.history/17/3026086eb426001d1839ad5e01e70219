@@ -1,0 +1,23 @@
+package com.enums;
+
+public enum StationaryItems {
+
+	SUGER,SALT,PENCIL,PEN,SHARPNER;
+	
+	int price;
+	
+	private StationaryItems() {
+		int price = 10;
+	}
+	
+	private StationaryItems(int x) {
+		this.price = x;
+		
+	}
+
+	public int getPrice() {
+		return price;
+	}
+
+	
+}

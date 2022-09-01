@@ -1,0 +1,14 @@
+package com.enums;
+
+public enum Month  {
+
+	JAN,FEB,MAR,APR,MAY;
+	
+	public static void main(String[] args) {
+		
+		System.out.println("inside main of enum");
+		
+	}
+	
+	
+}

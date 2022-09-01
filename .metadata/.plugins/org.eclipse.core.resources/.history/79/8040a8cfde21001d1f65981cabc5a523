@@ -1,0 +1,103 @@
+package com.Q1;
+
+
+import java.util.Scanner;
+import java.util.Set;
+import java.util.TreeSet;
+
+public class Main {
+
+	public static void main(String[] args) {
+		
+		Scanner sc = new Scanner(System.in);
+		
+		CompByName cn = new CompByName();
+		CompByPrice cp = new CompByPrice();
+		CompById ci = new CompById();
+		
+		Set<Product> productList1 = new TreeSet<>(cp); 
+		Set<Product> productList2 = new TreeSet<>(cn); 
+		Set<Product> productList3 = new TreeSet<>(ci); 
+		
+		while(true) {
+			
+			System.out.println("Enter the Product details:\n");
+			
+			System.out.println("Enter Product Id:");
+			int productId = sc.nextInt();
+			
+			System.out.println("Enter Product Name:");
+			String productName = sc.next();
+			
+			System.out.println("Enter Product Price:");
+			double productPrice = sc.nextDouble();
+			
+			
+			productList1.add(new Product(productId, productName, productPrice));
+			productList2.add(new Product(productId, productName, productPrice));
+			productList3.add(new Product(productId, productName, productPrice));
+
+			
+			if(productList1.size()==4) {
+				break;
+			}
+			
+			
+		}
+		
+		System.out.println("Enter the choice :\r\n"
+				+ " 1 for sorting the product according to the productPrice\r\n"
+				+ " 2 for sorting the product according to the productName\r\n"
+				+ " 3 for sorting the product according to the productId\r\n"
+				+ "");
+		
+		int choice = sc.nextInt();
+		
+		if(choice == 1) {
+			System.out.println("Sort By Price:");
+
+				System.out.println(productList1);
+				
+				System.out.println("----------------------");
+
+			
+		}
+		
+		else if(choice == 2) {
+			System.out.println("Sort By Name:");
+
+				System.out.println(productList2);
+				
+				System.out.println("----------------------");
+
+			
+		}
+		else {
+			System.out.println("Sort By Id:");
+			
+				System.out.println(productList3);
+				
+				System.out.println("----------------------");
+
+			
+		}
+		
+		
+	}
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

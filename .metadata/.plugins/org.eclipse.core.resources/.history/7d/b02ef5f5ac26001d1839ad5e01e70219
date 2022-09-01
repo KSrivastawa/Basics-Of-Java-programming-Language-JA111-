@@ -1,0 +1,11 @@
+package com.enums;
+
+public class EnumWith_Values_Ordinals {
+
+	public static void main(String[] args) {
+		
+		
+		
+	}
+	
+}

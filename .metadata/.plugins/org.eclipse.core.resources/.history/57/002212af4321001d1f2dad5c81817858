@@ -1,0 +1,62 @@
+package com.Q2;
+
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Scanner;
+
+public class Main {
+
+	public static void main(String[] args) {
+		
+		//List<Song> songs = new ArrayList<>();
+		
+		Scanner sc = new Scanner(System.in);
+
+		List<Song> playList = new ArrayList<>();
+		PlayList pl = new PlayList();
+		
+		int i=1;
+		while(true) {
+			
+			System.out.println("Enter the "+i++ +" song details:");
+			
+			System.out.println("Enter the movie name:");
+			String movieName = sc.next();
+			
+			System.out.println("Enter the song name:");
+			String songName = sc.next();
+			
+			Song s = new Song(movieName, songName)
+			pl.addSong(s);
+			
+			playList.add(s);
+			
+			if(playList.size()==4) {
+				break;
+			}
+			
+		}
+		
+		
+		int count = 1;
+		for(int j=0; j<playList.size(); j++) {
+					
+			System.out.println(count++ +" Song detail"+"\n------------");
+			System.out.println("Song Name: "+playList.get(j).getSongName());
+			System.out.println("Movie Name: "+playList.get(j).getMovieName());
+				
+			Song s = new Song(playList.get(j).getMovieName(), playList.get(j).getSongName());
+			s.play();
+		}
+			
+		
+	}
+
+}
+
+
+
+
+
+
+

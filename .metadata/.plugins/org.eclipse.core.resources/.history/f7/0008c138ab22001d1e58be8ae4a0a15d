@@ -1,0 +1,35 @@
+package com.dsa;
+
+import java.util.Scanner;
+
+public class All_Twice_Except_One_II {
+
+	public static void main(String[] args) {
+		
+
+		Scanner sc = new Scanner(System.in);
+		
+		System.out.println("Enter the size:");
+		int size = sc.nextInt();
+		
+		int[] arr = new int[(size*2) - 1];
+		
+		int elements = (size*2) - 1;
+		
+		System.out.println("Enter the"+ elements+" elements:");
+		
+		for(int i=0; i<arr.length; i++) {
+			
+			arr[i] = sc.nextInt();
+			
+		}
+		
+		for(int i=0; i<arr.length; i++) {
+			
+			System.out.print(arr[i]+" ");
+			
+		}
+		
+	}
+
+}

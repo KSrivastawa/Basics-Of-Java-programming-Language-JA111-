@@ -1,0 +1,58 @@
+
+Q3) Explain AutoBoxing and Auto UnBoxing with Examples.
+
+Ans:
+ 
+ 	In Java, primitive data types are treated differently so do there comes the
+ 	introduction of wrapper classes where two components play a role namely
+ 	Autoboxing and Unboxing. Autoboxing refers to the conversion of a primitive
+ 	value into an object of the corresponding wrapper class is called 
+ 	autoboxing. For example, converting int to Integer class. The Java 
+ 	compiler applies autoboxing when a primitive value is: 
+
+	->Passed as a parameter to a method that expects an object of the corresponding
+	 wrapper class.
+	->Assigned to a variable of the corresponding wrapper class.
+
+	--Primitive Type--  --Wrapper Class--
+		boolean				Boolean
+		byte				Byte
+		char				Character
+		float 				Float
+		int 				Integer
+		long				Long
+		short 				Short
+		double				Double
+		
+	example:
+
+		ArrayList al=new ArrayList();
+		
+		al.add("delhi");
+		al.add("mumbai");
+		al.add("chennai");
+		al.add("kolkata");
+		al.add(new A());
+		al.add(new Student(10, "Amit", 780));
+		al.add(null);
+		al.add(null);
+		al.add("delhi");
+		al.add(10);  // Integer 
+		al.add(true); //Boolean
+		al.add(10.55); //Double
+		
+		System.out.println(al);
+		System.out.println(al.size());
+		
+		
+		
+//		Object obj= al.get(1);
+//		String city= (String)obj;
+		
+		int x= (Integer)al.get(9);
+		
+		System.out.println(x);	
+		
+		
+		
+		

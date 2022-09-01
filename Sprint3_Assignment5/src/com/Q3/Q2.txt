@@ -1,0 +1,113 @@
+
+Q3) Explain the difference between abstract class and interface.
+
+Ans:
+
+	=> Abstract class: 
+		 A class which contains the abstract keyword in its declaration.
+	- We can't create object for abstract class.
+	- It may or may not contain abstract methods.
+	- It can have abstract and non-abstract methods.
+	- To use an abstract class, you have to inherit it from subclass.
+	
+		example: 
+	A.java
+	------
+	public abstract class A {
+		
+		public abstract void abc();
+		
+		public abstract void xyz();
+
+	}
+		
+	B.java
+	------
+	public class B extends A{
+	
+		@Override
+		public void abc(){
+		// write something
+		}
+		
+		@Override
+		public void xyz(){
+		// write something
+		}
+	}
+	
+	Main.java
+	---------
+	public class Main {
+	
+		public static void main(String[] args){
+		
+			A a1 = new B();
+			
+			a1.abc();
+			a1.xyz();
+			
+	   }
+	}
+	
+	
+	=> Interface: 
+		Interface is just like a class, Which contains only contains abstract method or
+	collection of abstract methods. To achieve interface java provides 
+	keyword called implements.
+	- Interface methods are by default public and abstract.
+	- Interface variables are by default public+static+final.
+	- Interface must be overridden inside the implements class
+	 (and also there own methods of implements class).  
+
+
+	example: 
+	A.java
+	------
+	interface A {
+		
+		void abc();
+		
+		void xyz();
+
+		
+	}
+		
+	B.java
+	------
+	public class B implements A{
+	
+		@Override
+		void abc(){
+		// write something
+		}
+		
+		@Override
+		void xyz(){
+		// write something
+		}
+		
+	}
+	
+	Main.java
+	---------
+	public class Main {
+	
+		public static void main(String[] args){
+		
+			A a1 = new B();
+			
+			a1.abc();
+			a1.xyz();
+			
+	   }
+	}
+	
+	
+	
+	
+	
+	
+	
+	
+	

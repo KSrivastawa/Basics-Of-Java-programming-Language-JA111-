@@ -1,0 +1,36 @@
+Q4) Explain why the following block of code will give a compile time error?
+	
+	public class Main {
+		public static void main(String[] args) {
+		float f=3.3;
+		System.out.println(f);
+		}
+	}
+	
+	*Also rectify this code.
+
+	
+Solution:
+
+  *In java any decimal point number will be by default treated as double.
+ example:
+		float f= 10.55;
+		Status: Compilation Error, Possible loss of precision.
+		In order to downcast this double value to the float we can use either
+		float f = (float)10.55;
+		or
+		float f = 10.55f;
+		
+	Here we can see the correct solution:
+	
+		public class Main {
+		
+		public static void main(String[] args) {
+			float f=3.3f;
+			// float f=(float)3.3;
+			
+			System.out.println(f); // result = 3.3
+	  }
+    }
+  
+  

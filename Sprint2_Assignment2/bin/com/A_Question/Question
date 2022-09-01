@@ -1,0 +1,52 @@
+								Day 5 Assignment
+
+
+
+Question 1:
+Assume you have access to two boolean variables, isSnowing, and isRaining, and one double variable, temperature. isSnowing is true when it's snowing and false otherwise, isRaining is true when it's raining and false otherwise, and temperature gives the outdoor temperature in degrees Fahrenheit. Write code that prints: “Let's stay home." if it's raining, snowing, or below 50 degrees Fahrenheit (10 degrees Celsius), and prints: Let's go out!" otherwise.
+Starting code:
+public class CheckWeather {
+	
+	public static void main(String[] args) {
+
+	//Assume these can have any value:
+	boolean isSnowing = false;
+	boolean isRaining = true;
+	double temperature = 60.0;
+	//print "Let’s stay home." if its raining, snowing or
+	//below 50 degrees and print "Let’s go out!" otherwise.
+
+}
+}
+
+Question 2:
+Write a java application with a non-static method that will accept a character (a-z or A-Z) and print if that character is vowel or consonant, if we supply other than (a-z or A-Z) then that method should print the error message.
+
+
+Call the above method from the main method of the same class 3 times:
+    first time by supplying a vowel
+    second time by supplying a consonant
+    third time by supplying an invalid character
+
+Question 3:
+      Create a class Shapes that has following overloading methods:
+          public void area(Circle circle);
+       public void area(Rectangle rectangle);
+       public void area(Square square);
+
+       Class Circle has following fields :
+            int radius
+
+       Class Rectangle has following fields :
+      int length;
+      int breadth;
+
+      Class Square has following fields :
+          int side;
+
+     Create the Main class with the main method and inside the main method do the
+     following things:
+     Make the single object of the Shape class and call all 3 area methods based on the    
+     argument.
+     With the help of this explain static polymorphism.
+

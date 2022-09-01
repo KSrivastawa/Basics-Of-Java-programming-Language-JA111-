@@ -1,0 +1,18 @@
+package com.Q5;
+
+import java.util.Collection;
+import java.util.LinkedList;
+import java.util.List;
+
+public class Student {
+
+	public static void main(String[] args) {
+		
+
+		List<Student> strList = new LinkedList<>();
+		
+		strList.add("Hello Everybody, welcome to collection in JAVA. Collection, is like a container and powerful concept in Java!");
+		
+	}
+	
+}

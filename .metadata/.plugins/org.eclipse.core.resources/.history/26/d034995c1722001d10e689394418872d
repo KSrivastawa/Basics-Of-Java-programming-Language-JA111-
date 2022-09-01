@@ -1,0 +1,16 @@
+package com.Q5;
+
+
+public class Student {
+
+	String art;
+	
+	public static void main(String[] args) {
+		
+		StringBuilder str = new StringBuilder("Hello Everybody, welcome to collection in JAVA.");
+
+		
+		
+	}
+	
+}

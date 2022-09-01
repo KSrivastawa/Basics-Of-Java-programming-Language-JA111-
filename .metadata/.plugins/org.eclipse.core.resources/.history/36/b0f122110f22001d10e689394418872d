@@ -1,0 +1,11 @@
+package com.Q4;
+
+public class Product {
+
+	String name;
+	double price;
+	String company;
+	int count;
+
+	
+}

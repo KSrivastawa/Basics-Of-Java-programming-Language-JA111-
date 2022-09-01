@@ -1,0 +1,13 @@
+package com.enums;
+
+public enum Month2 {
+
+	JAN,FEB,MAR,APR,MAY;
+	
+	Month2(){
+		
+		System.out.println("inside contructor of Month2 ");
+		
+	}
+	
+}

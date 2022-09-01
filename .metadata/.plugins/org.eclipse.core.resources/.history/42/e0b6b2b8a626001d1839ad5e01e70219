@@ -1,0 +1,9 @@
+package com.var_args;
+
+public class Student {
+
+	int roll;
+	String name;
+	int marks;
+	
+}

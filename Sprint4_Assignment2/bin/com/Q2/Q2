@@ -1,0 +1,24 @@
+
+Q2) What is the difference between ArrayList and Array?
+
+Ans:
+
+  ===Base===					  	=====Array====		   												===ArrayList====
+	
+ Dimensionality 			It can be single-dimensional or multidimensional 		  			It can only be single-dimensional 
+
+ Traversing Elements 		For and for each generally is used for iterating over arrays 		Here iterator is used to traverse riverArrayList 
+ 
+ Length 					length keyword can give the total size of the array.				size() method is used to compute the size of ArrayList.
+ 
+ Size						It is static and of fixed length									It is dynamic and can be increased or decreased in size when required.
+ 
+ Speed						It is faster as above we see it of fixed size						It is relatively slower because of its dynamic nature 
+ 
+ Generics					They can not be added here hence type unsafe 						They can be added here hence makingArrayList type-safe. 
+ 
+ Adding Elements 			Assignment operator only serves the purpose							Here a special method is used known as add() method  
+ 
+ 
+ 
+ 

@@ -1,0 +1,12 @@
+package com.Q5;
+
+public class Student {
+
+	public static void main(String[] args) {
+		
+		String article = "“Hello Everybody, welcome to collection in JAVA. Collection, is like a container and powerful concept in Java!";
+		
+		
+	}
+	
+}
