@@ -1,0 +1,17 @@
+package com.enums;
+
+import java.util.Arrays;
+
+public class Enum_Methods_Variables {
+
+	public static void main(String[] args) {
+
+		Month[] m = Month.values();
+		
+		System.out.println(Arrays.toString(m));  // [JAN, FEB, MAR, APR, MAY]
+
+		
+		
+	}
+
+}

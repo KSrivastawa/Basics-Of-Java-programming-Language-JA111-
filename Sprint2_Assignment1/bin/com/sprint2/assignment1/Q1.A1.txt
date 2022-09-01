@@ -1,0 +1,77 @@
+Q1) Differentiate between static and non-static variables?
+
+Ans:
+
+	Static-> Those variables(also called instance variables) which is assigned by static data types are called
+	Static variables.
+	
+	For example:
+	 static String abc = "Ketan";
+	 static int x = 23;
+	 
+	Here we can see--> 
+	[static assigned first][String is data type]-[abc is variable name]-["Ketan" is value] ,
+	[static assigned first][int is data type]-[x is variable name]-[23 is value]
+	
+	>More clarity with class-method:
+	
+	class Main{
+	
+		static String abc = "Ketan";
+		static int x = 23;
+		
+		public static void main (String[] args){
+		
+			<those assigned static data types can be called inside directly> 
+			
+			for example:
+					
+			System,out.println(abc);   // will get the value- Ketan in console.
+			System,out.println(x); 	// as same -  23
+		
+		}
+	
+	}
+	
+	
+  Non-Static-> Those variables which is not assigned by static data types are called
+	Non-Static variables.
+	
+	For example:
+	 String abc = "Ketan";
+	 int x = 23;
+	 
+	Here we can see--> 
+	[String is data type]-[abc is variable name]-["Ketan" is value] ,
+	[int is data type]-[x is variable name]-[23 is value]
+	
+	>More clarity with class-method:
+	
+	class Main{
+	
+		String abc = "Ketan";
+		int x = 23;
+		
+		public static void main (String[] args){
+		
+			<those assigned non-static data types cannot be called inside directly> 
+			< this must be create an object of class then it will be possible to call>
+			for example:
+			Main object = new Main();
+			<after creating class-object we can call through object>
+			
+			System,out.println(object.abc);   // will get the value- Ketan in console.
+			System,out.println(object.x); 	// as same -  23
+		
+		}
+	
+	}
+	
+	
+	
+	
+	
+	
+	
+
+	

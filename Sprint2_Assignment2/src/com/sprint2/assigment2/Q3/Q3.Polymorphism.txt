@@ -1,0 +1,44 @@
+
+=> Static Polymorphism (compile time polymorphism):-- more than one method 
+	with the same name but with different parameter (which method will be 
+	executed will be decided at compile time), we achieve static 
+	polymorphism by using method overloading.
+	
+	For example:
+	
+		public class Shape {
+
+			Circle circle;
+			Rectangle rectangle;
+			Square square;
+			
+			
+			public void area(Circle circle) {
+					circle.radius = 5;
+				System.out.println(circle.radius*circle.radius);
+				
+			};
+			
+		    public void area(Rectangle rectangle) {
+			    	rectangle.breadth = 45;
+					rectangle.length = 62;
+		    	System.out.println(rectangle.breadth*rectangle.length);
+		    };
+		    
+		    public void area(Square square) {
+		    		square.side = 12;
+		    	System.out.println(square.side);
+		    };
+		
+			public static void main(String[] args) {
+						
+				
+			}
+		
+		}
+		
+		-> Having same method name but different parameter names
+		
+		
+		
+		

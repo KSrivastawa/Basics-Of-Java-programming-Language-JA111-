@@ -1,0 +1,18 @@
+package com.enums;
+
+
+public class StationaryItems_Main {
+
+	public static void main(String[] args) {
+
+		StationaryItems[] st = StationaryItems.values();
+		
+		for(StationaryItems stat: st) {
+			
+			System.out.println(stat+" ---> "+ stat.getPrice());
+			
+		}
+
+	}
+
+}

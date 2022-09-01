@@ -1,0 +1,47 @@
+package com.Q1;
+
+import java.util.ArrayList;
+import java.util.LinkedHashSet;
+import java.util.List;
+import java.util.Set;
+
+//  Library Management System
+
+public class Library {
+
+
+	public static void main(String[] args) {
+		
+		Set<Book> booksCollection = new LinkedHashSet<>();
+		
+		booksCollection.add(new Book(1,"Name1","Author1"));
+		booksCollection.add(new Book(2,"Name2","Author1"));
+		booksCollection.add(new Book(3,"Name1","Author1"));
+		booksCollection.add(new Book(1,"Name4","Author2"));
+		
+		//System.out.println(booksCollection.size());
+		
+		//System.out.println(booksCollection);
+		
+		List<Book> bookList = new ArrayList<>(booksCollection);
+		
+		for(int i=0; i<bookList.size(); i++) {
+			System.out.println(bookList.get(i));
+		}
+		
+	}
+	
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

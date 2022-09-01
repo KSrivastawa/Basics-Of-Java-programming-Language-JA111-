@@ -1,0 +1,39 @@
+package com.var_args;
+
+public class Students {
+	
+	int roll;
+	String name;
+	int marks;
+	
+	public Students() {
+		// TODO Auto-generated constructor stub
+	}
+	
+	public Students(int roll, String name) {
+		super();
+		this.roll = roll;
+		this.name = name;
+		
+	}
+	
+	public Students(int roll, String name, int marks) {
+		super();
+		this.roll = roll;
+		this.name = name;
+		this.marks = marks;
+		
+	}
+
+	public static void main(String[] args) {
+
+		Students[] students = {
+				new Students(),
+				new Students(),
+				new Students()
+		};
+	}
+	
+	
+
+}

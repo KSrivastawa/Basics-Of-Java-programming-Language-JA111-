@@ -1,0 +1,41 @@
+
+Q2) Why multiple Inheritance is not supported in Java at the class Level?
+
+Ans:
+	In java, multiple inheritance is not supported because of ambiguity problem.
+	We can take the below example where we have two classes Class1 and Class2 
+	which have same method display(). If multiple inheritance is possible than
+	Test class can inherit data members (properties) and methods (behaviour)
+	of both Class1 and Class2 classes.
+	
+	when display() method will be called with Test class object which method will
+	be called, will it be of Class1 or Class2.
+	
+	for example:
+	
+	class Class1{
+      public void display(){
+            System.out.println("Display method inside Class1.");
+      }
+	}
+	 
+	class Class2{
+	      public void display(){
+	            System.out.println("Display method inside Class2.");
+	      }
+	}
+	 
+	//let multiple inheritance is possible.
+	public class Test extends Class1, Class2{
+	      public static void main(String args[]){
+	            Test obj = new Test();
+	            //Ambiguity problem in method call which class display() method
+	             will be called.
+	            obj.display();
+	      }
+	}
+	
+	Output:
+		Exception in thread "main" java.lang.Error: 
+		Unresolved compilation problem:
+		at com.w3spoint.business.Test.main(Test.java:19)

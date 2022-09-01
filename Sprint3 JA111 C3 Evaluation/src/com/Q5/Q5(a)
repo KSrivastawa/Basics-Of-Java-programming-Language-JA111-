@@ -1,0 +1,39 @@
+Question 5:
+
+	a) Does the below code compile successfully? If not, why?
+	interface A{
+		int i = 111;
+	}
+		
+		
+	class B implements A{
+		void methodB(){
+		i = 222;
+		}
+	}
+
+
+Solution:
+
+Ans: No, this will not compile successfully.
+
+Reason-> The final field A, i cannot be assigned.
+
+-Here is change:
+	public interface A {
+	
+			int i = 111;
+	
+	}
+			
+	class B implements A{
+		
+		void methodB(){
+			System.out.println("Value of i: "+i);  // 111
+			System.out.println("Value of i: "+i*i);   
+			System.out.println("Value of i: "+i+i); 
+		}
+	}
+	
+	Now, this will compile successfully.
+

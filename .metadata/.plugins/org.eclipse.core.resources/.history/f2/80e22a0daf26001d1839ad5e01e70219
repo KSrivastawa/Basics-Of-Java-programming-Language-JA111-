@@ -1,0 +1,18 @@
+package com.enums;
+
+public class EnumWith_Values_Ordinals {
+
+	public static void main(String[] args) {
+		
+		Month[] month = Month.values();
+		
+		String one = "1";
+		for(int i=0; i<month.length; i++) {
+			
+			System.out.println(month[i]+" ---> "+Integer.parseInt(one)+month[i].ordinal());
+
+		}
+		
+	}
+	
+}

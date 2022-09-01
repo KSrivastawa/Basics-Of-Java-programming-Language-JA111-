@@ -1,0 +1,13 @@
+package com.enums;
+
+public class Enum_Methods_Variables {
+
+	public static void main(String[] args) {
+
+		Month[] m = Month.values();
+		
+		System.out.println(m.toString());
+
+	}
+
+}

@@ -1,0 +1,19 @@
+package com.Q4;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class Ecommerce {
+
+	List<Product> productList= new ArrayList<>();
+	
+	void addProductToList(Product product) {
+		
+	}
+	List<Product> showAllProduct(List<Product> pro){
+		return productList;
+		
+	}
+
+	
+}

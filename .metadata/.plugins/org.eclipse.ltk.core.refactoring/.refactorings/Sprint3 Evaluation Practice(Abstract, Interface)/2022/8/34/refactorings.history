@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename package &apos;com.example2&apos; to &apos;com.multiple_Inheritence&apos;&#x0D;&#x0A;- Original project: &apos;Sprint3 Evaluation Practice(Abstract, Interface)&apos;&#x0D;&#x0A;- Original element: &apos;Sprint3 Evaluation Practice(Abstract, Interface)/src/com.example2&apos;&#x0D;&#x0A;- Renamed element: &apos;Sprint3 Evaluation Practice(Abstract, Interface)/src/com.multiple_Inheritence&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename package &apos;com.example2&apos;" flags="589830" hierarchical="false" id="org.eclipse.jdt.ui.rename.package" input="/src&lt;com.example2" name="com.multiple_Inheritence" qualified="false" references="true" stamp="1660580829931" textual="false" version="1.0"/>
+</session>

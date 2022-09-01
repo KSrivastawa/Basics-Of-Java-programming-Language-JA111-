@@ -1,0 +1,16 @@
+package com.Q1;
+//  Library Management System
+
+public class Library {
+
+	private int bookId;
+	private String bookName;
+	private String author;
+	
+	public static void main(String[] args) {
+		
+		
+		
+	}
+	
+}

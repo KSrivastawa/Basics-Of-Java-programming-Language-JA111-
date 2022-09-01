@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename type &apos;com.Q1.Instrutor&apos; to &apos;Instructor&apos;&#x0D;&#x0A;- Original project: &apos;Sprint3_Assignment3&apos;&#x0D;&#x0A;- Original element: &apos;com.Q1.Instrutor&apos;&#x0D;&#x0A;- Renamed element: &apos;com.Q1.Instructor&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename type &apos;Instrutor&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.type" input="/src&lt;com.Q1{Instrutor.java[Instrutor" matchStrategy="1" name="Instructor" qualified="false" references="true" similarDeclarations="false" stamp="1660244622054" textual="false" version="1.0"/>
+</session>

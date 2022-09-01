@@ -1,0 +1,49 @@
+package com.Q2;
+
+import java.util.Scanner;
+import java.util.Set;
+import java.util.TreeSet;
+
+import com.Q1.CompByPrice;
+import com.Q1.Product;
+
+public class Main {
+
+	public static void main(String[] args) {
+		
+		Scanner sc = new Scanner(System.in);
+
+		
+		CompBySalary cs = new CompBySalary();
+
+		Set<Product> employeeDetails = new TreeSet<>(cs); 
+		
+		while(true) {
+			
+			System.out.println("Enter the Product details:\n");
+			
+			System.out.println("Enter Product Id:");
+			int productId = sc.nextInt();
+			
+			System.out.println("Enter Product Name:");
+			String productName = sc.next();
+			
+			System.out.println("Enter Product Price:");
+			double productPrice = sc.nextDouble();
+			
+			
+			employeeDetails.add(new Product(productId, productName, productPrice));
+
+			
+			if(employeeDetails.size()==4) {
+				break;
+			}
+			
+		}
+		
+		
+		System.out.println(employeeDetails);
+
+	}
+
+}

@@ -1,0 +1,13 @@
+package com.Q1;
+//  Library Management System
+
+public class Library {
+
+	
+	public static void main(String[] args) {
+		
+		System.out.println("hello");
+		
+	}
+	
+}

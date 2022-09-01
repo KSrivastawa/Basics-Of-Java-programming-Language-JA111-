@@ -1,0 +1,67 @@
+Q4) Explain the difference between overloading and overriding methods with an example?
+
+Ans:
+
+			Method Overloading													Method Overriding
+ 1.	Method overloading is a compile-time polymorphism.       Whereas in the method overriding, methods or functions must
+ 	must have the same name and different signatures.	      have the same name and same signatures.
+ 
+ 2.	Method overloading is a example of compile time			 Whereas method overriding is a example of run time polymorphism.
+ 	polymorphism.	
+ 
+ 3.	In the method overloading, inheritance may or 			 Whereas in method overriding, inheritance always required.
+	may not be required.	
+ 
+ 4.	Method overloading is performed between methods			 Whereas method overriding is done between parent class and
+	 within the class.										  child class methods.
+	
+ 5.	It is used in order to add more to the behavior			 Whereas it is used in order to change the behavior of exist
+ 	of methods.												  methods.
+ 
+ 6.	In method overloading, there is no need of more			 Whereas in method overriding, there is need of at least of
+ 	than one class.											  two classes.
+ 
+ Example:														Example:
+ 
+ class MethodOverloadingEx {									class Animal {	
+ 
+    static int add(int a, int b)										void eat()	
+    {															{
+      return a + b;													System.out.println("eat() method of base class");
+      																	System.out.println("eating.");			
+    }																}
+ 																}
+    static int add(int a, int b, int c)							
+    																class Dog extends Animal {
+    																   void eat()
+	 {																	    {
+																	        System.out.println("eat() method of derived class");
+			return a + b + c;														System.out.println("Dog is eating.");
+																	   		}
+	  }																	}
+   																	class MethodOverridingEx {		
+       public static void main(String args[]) 							public static void main(String args[])		
+  																		{	
+ 
+    																		Dog d1 = new Dog();	
+    {																		Animal a1 = new Animal();
+          System.out.println("add() with 2 parameters");				
+        System.out.println(add(4, 6));										 d1.eat();
+       																		 a1.eat();
+          System.out.println("add() with 3 parameters");						
+        System.out.println(add(4, 6, 7));									Animal animal = new Dog();
+    }																
+}																			 animal.eat();
+ 																		}
+ Output:															}
+ 																
+	add() with 2 parameters											Output:
+	10														
+	add() with 3 parameters											eat() method of derived class				
+		17															Dog is eating.
+																	eat() method of base class
+																	eating.
+																	eat() method of derived class
+																	Dog is eating.								
+	 
+ 

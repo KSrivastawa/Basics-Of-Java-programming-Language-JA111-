@@ -1,0 +1,49 @@
+Q3) Change this block of code according to the given instruction and explain the output?
+	
+	public class Demo {
+		public static void main(String[] args) {
+		int a = 64;
+		int b = 70;
+		byte c = a+b;//typecast (a+b) to byte
+		System.out.println(c){
+		}
+	}
+	Note: You need to typecast (a+b) to byte
+	
+	
+Ans:
+	Above class Demo will get compilation error,
+	
+	-Because in type casting we cannot direct assigned values without looking it's values;
+	for example: byte have 1 byte and int have 4 byte so we cannot catch the value simply, 
+	we have follow some rules of type casting which is described in the types.
+	
+	1. Implicit = The process of converting from lower data type to higher data type.
+	for example: 
+		byte a = 10;
+		int b = a;
+		System.out.println(b);
+		
+	2. Explicit = The process of converting from higher data type to lower data type.
+	here is some pattern: P a = (Q)b;
+						  (Q)-> Cast operator.	
+	for example:
+	int a = 10;
+	byte b = (byte)a;
+	System.out.println(b)
+	
+	As per changed according to question asked by:
+	
+	public class Demo {
+		public static void main(String[] args) {
+		int a = 64;
+		int b = 70;
+		int c = a+b;
+		byte d = (byte)c;
+		System.out.println(d);
+		
+		}
+	}
+	
+	status: No compilation error.
+	

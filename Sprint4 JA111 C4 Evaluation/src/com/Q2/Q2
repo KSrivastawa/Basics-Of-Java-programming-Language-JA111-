@@ -1,0 +1,68 @@
+
+Q2) Explain about Hashcode and Equals Method.
+
+Ans:
+
+=> Equals():
+	The equals() is a method of lang.Object class, and it is used to compare two objects.
+	To compare two objects that whether they are the same, it compares the values of both
+	the object's attributes.
+	By default, two objects will be the same only if stored in the same location.
+	
+	Syntax: 
+		public boolean equals(Object obj)
+	
+	Parameter:
+	 	obj: It takes the reference object as parameter, with which we need to make the comparison.
+	 	
+	Returns:
+		It returns the true if both the objects are the same, else returns false.
+	
+		
+=> Hashcode():
+	 A hashcode is an integer value associated with every object in java, facilitating the hashing
+	 in hash tables.
+	 To get this hashcode value for an object, we can use the hashcode() method in java.
+	 Since this method is defined in the object class, hence it is inherited by user-defined classes also.
+	 
+	 The hashcode() method returns the same hash value when called on two objects, which are equals 
+	 according to the equals() method. And if the objects are unequals, it usually returns different hash values.
+	 
+	Syntax:
+		public int hashCode()
+		
+	Returns:
+	 	It return the hash code value for the given objects.
+	 	
+
+=>> Example:
+		
+		* They are overridden methods *
+		
+		@Override
+		public int hashCode() {
+		
+			return Objects.hash(movieName, songName);   // variable names for comparing
+		}
+		
+		@Override
+		public boolean equals(Objects obj) {
+			
+			if(this == obj)
+				return true;
+				
+			if(obj == null)
+				return false;
+				
+			if(getClass() != obj.getClass())
+				return false;
+				
+			Song obj2 = (Song)obj;  // downCasting
+			
+			return Objects.equals(movieName, obj2.movieName) && Objects.equals(songName, obj2.songName);
+		
+		}
+	
+	 
+
+

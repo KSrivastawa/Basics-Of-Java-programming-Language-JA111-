@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;Sprint2_Assignment4/src/com/sprint2/assignment4/A4.Q1.txt&apos; to &apos;Q1.txt&apos;" description="Rename resource &apos;A4.Q1.txt&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="src/com/sprint2/assignment4/A4.Q1.txt" name="Q1.txt" stamp="1659850451094" updateReferences="true"/>
+</session>

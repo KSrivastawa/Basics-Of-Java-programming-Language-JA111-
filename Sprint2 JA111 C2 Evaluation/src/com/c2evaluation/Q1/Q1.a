@@ -1,0 +1,86 @@
+Q1) a) Why String is immutable in java and what is the difference between String and String Builder? And Write
+	some of the methods of String class at least 5 with example.
+
+Ans: 
+
+	A string is immutable in java, while a StringBuilder is mutable in Java.
+	An immutable object is an object whose content cannot be changed after it is created.
+	When we try to concatenate two Java strings, a new String object is created in string pool.
+	
+	Differences between StringBuffer and StringBuilder:
+	- Most of the methods of StringBuilder is non-synchronized, i,e not thread-safe it will give fast performance.
+	
+	- Whereas most of the methods of StringBuffer is synchronized i.e thread safe, and give sloow performance compare to StringBuilder.
+	
+	- 	synchronized void bookTicket(){
+		--
+		--
+		}
+	
+	-   synchronized void getAvailabilty(){
+		--
+		--
+		}
+		
+	
+	example1:
+	
+	package com.stringbuilder1
+	
+	public class Demo{
+	
+		public static String reverseString(String originalString){
+		
+			stringBuilder sb = new StringBuilder("");
+			
+			char[] chr = originalString.toCharArray();
+			
+			for(int i=0; chr.length-1; i++){
+			
+			sb.append(chr[i]);
+			
+			}
+	
+			return sb.toString();
+		}
+		
+		public static void main(String[] args){
+		
+		System.out.print(reverseString("welcome"));
+		}
+	
+	}	 
+	
+	
+	example2:
+	
+	package com.stringbuilder2
+	
+	public class Demo2{
+	
+		public static String reverseString(String originalString){
+		
+			stringBuilder sb2 = new StringBuilder("");
+			
+			char[] chr2 = originalString.toCharArray();
+			
+			for(int i=0; chr2.length-1; i++){
+			
+			sb2.append(chr2[i]);
+			
+			}
+	
+			return sb2.toString();
+		}
+		
+		public static void main(String[] args){
+		
+		System.out.print(reverseString("Hello"));
+		}
+	
+	}	 
+	
+	
+	
+	
+

@@ -1,0 +1,25 @@
+package com.Q5;
+
+import java.util.LinkedList;
+import java.util.List;
+
+public class Student {
+
+	public static void countWords(String st) {
+		
+		char[] ch = st.toCharArray();
+		
+		link<Character> chr = new LinkedList<>();
+		
+	}
+	
+	public static void main(String[] args) {
+
+		
+		String stri = "Hello Everybody, welcome to collection in JAVA.";
+		
+		Student.countWords(stri);
+		
+	}
+	
+}

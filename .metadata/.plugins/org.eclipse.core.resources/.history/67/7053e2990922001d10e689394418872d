@@ -1,0 +1,14 @@
+package com.Q3;
+
+public class Student {
+
+	private int rollNo;
+	private String name;
+	private int mathsMarks;
+	private int scienceMarks;
+	private int engMarks;
+	
+	
+	
+	
+}

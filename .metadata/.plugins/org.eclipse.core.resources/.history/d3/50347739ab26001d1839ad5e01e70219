@@ -1,0 +1,15 @@
+package com.enums;
+
+public enum EnumOf_Month {
+
+	JAN,FEB,MAR,APR,MAY;
+	
+	public static void main(String[] args) {
+		
+		EnumOf_Month m=EnumOf_Month.JAN;
+			
+			System.out.println(m);
+		
+	}
+	
+}

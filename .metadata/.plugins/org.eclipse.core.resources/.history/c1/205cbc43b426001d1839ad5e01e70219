@@ -1,0 +1,18 @@
+package com.enums;
+
+public enum StationaryItems {
+
+	SUGER,SALT,PENCIL,PEN,SHARPNER;
+	
+	int price;
+	
+	private StationaryItems() {
+		// TODO Auto-generated constructor stub
+	}
+	
+	private StationaryItems() {
+		// TODO Auto-generated constructor stub
+	}
+	
+	
+}

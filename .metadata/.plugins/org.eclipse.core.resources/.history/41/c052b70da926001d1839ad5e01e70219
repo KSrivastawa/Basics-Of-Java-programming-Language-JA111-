@@ -1,0 +1,67 @@
+package com.var_args;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class Students {
+	
+	int roll;
+	String name;
+	int marks;
+	
+	public Students(int roll) {
+		super();
+		this.roll = roll;
+	}
+	
+	public Students(int roll, String name) {
+		super();
+		this.roll = roll;
+		this.name = name;
+		
+	}
+	
+	public Students(int roll, String name, int marks) {
+		super();
+		this.roll = roll;
+		this.name = name;
+		this.marks = marks;
+		
+	}
+	
+	
+	
+	
+
+	public static void studentObjects(Students... students ) {
+		
+		List<Students> list = new ArrayList<>();
+		
+		for(int i=0; i<students.length; i++) {
+			list.add(students[i]);
+		}
+		
+		for(int i=0; i<list.size(); i++) {
+			System.out.println(list.get(i));
+		}
+
+		
+		
+
+		
+	}
+
+	public static void main(String[] args) {
+
+		Students[] students = {
+
+				new Students(96, "Prashant", 985)
+		};
+		
+		// ---calling method---
+		studentObjects( students );
+		
+		
+	}
+
+}
