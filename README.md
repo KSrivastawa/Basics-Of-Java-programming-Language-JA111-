@@ -1,2 +1,2 @@
-# JA111
+# Java Programs
 Basics of Java Programming Language
